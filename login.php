@@ -1,5 +1,5 @@
 <?php
-	$userName = $_GET["username"];
-	$passWord = $_GET["password"];
+	$userName = $_POST["username"];
+	$passWord = $_POST["password"];
 	echo $userName . $passWord;
 ?>
