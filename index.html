@@ -7,18 +7,33 @@
 	<title> NieT Page </title>
 	
 	<body>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '1946347745654145',
+		      xfbml      : true,
+		      version    : 'v2.10'
+		    });
+		    FB.AppEvents.logPageView();
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 		<br>
 		<marquee HEIGHT=50 direction = right><b> Welcome to NieT </b></marquee>
 		
-		<form method = "post" action = "login.php">
-			User name: 
-			<input type = "text" name = "username">
-			<br><br>
-			Password: 
-			<input type = "password" name = "password">
-			<br><br>		
-			<input type = "submit" value = "Login">
-		</form>
+		<div
+		  class="fb-like"
+		  data-share="true"
+		  data-width="450"
+		  data-show-faces="true">
+		</div>
 		Version 0.0.4
 	</body>	
 	
